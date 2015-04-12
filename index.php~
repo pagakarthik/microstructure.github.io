@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
 
 $sitename = "SomeWebsite";
@@ -25,8 +27,7 @@ $pages = glob("./" .$type."/*$requestedpage.txt");
 if ($pages) { $page = $pages[0]; } else { $page = "./page/HIDDEN-404.txt"; $type = 'page'; }                 // default 404 error page
 list($pageheader, $pagecontent, $pagetitle, $pageauthor, $pagedate, $pagenomenu, $pageurl) = getpage($page);
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
